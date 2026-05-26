@@ -127,3 +127,54 @@ h1.page-header{
    background-color: #f1ebe5; /* Highlights the row the mouse is over */
    transition: background-color 0.2s ease;
 }
+
+/* Container to give the cat a dedicated space on the page */
+.cat-container {
+   max-width: 300px;
+   margin: 40px auto;
+   text-align: center;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+
+/* The Cat Image Styles and Animation Trigger */
+.fading-cat {
+   max-width: 100%;
+   height: auto;
+  
+   /*
+      Trigger the animation:
+      - name: cheshireFade
+      - duration: 12 seconds for one full cycle
+      - timing: ease-in-out for smooth fades
+      - iteration: infinite (keep looping forever)
+   */
+   animation: cheshireFade 12s ease-in-out infinite;
+}
+
+
+/*
+  The Animation Timeline (Keyframes)
+  0% is the start, 100% is the end of the 12-second loop.
+*/
+@keyframes cheshireFade {
+   0% {
+       opacity: 0; /* Completely invisible on page load */
+   }
+   15% {
+       opacity: 0; /* Stays invisible for a moment */
+   }
+   35% {
+       opacity: 1; /* Smoothly fades IN to full visibility */
+   }
+   65% {
+       opacity: 1; /* Stays visible so we can see the smile */
+   }
+   85% {
+       opacity: 0; /* Smoothly fades OUT back to invisible */
+   }
+   100% {
+       opacity: 0; /* Resets to the beginning of the loop */
+   }
+}
