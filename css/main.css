@@ -39,3 +39,9 @@ nav a:hover{
    text-decoration: none; /* default underline goes away on hover */
 }
 /* end nav rules */
+
+h1.page-header{
+   width:80%;
+   margin:auto;
+   text-align:center;
+}
