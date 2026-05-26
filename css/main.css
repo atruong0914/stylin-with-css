@@ -49,3 +49,34 @@ h1.page-header{
    text-align:center;
    text-shadow: 4px 4px 4px #aaa;
 }
+
+/* Container to keep things organized */
+.story-block {
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 15px;
+   font-family: Georgia, serif;
+   line-height: 1.6;
+}
+
+
+/* The Magic Trick: Float the image to the right */
+.story-pic {
+   float: right;
+   max-width: 250px;
+   height: auto;
+  
+   /* Push the text away from the left and bottom edges of the pic */
+   margin-left: 20px;
+   margin-bottom: 15px;
+  
+   border: 1px solid #ccc;
+   box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Clean up paragraph spacing */
+.story-block p {
+   margin-bottom: 15px;
+   text-align: justify; /* Gives a clean book-like edge */
+}
